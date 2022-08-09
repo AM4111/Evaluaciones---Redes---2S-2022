@@ -64,10 +64,10 @@ Puesto que la mayoría de las aplicaciones no necesita trabajar de manera direct
 Las funciones de administración del plano y de la capa se relacionan con la administración de recursos y coordinación entre capas. Cada una de las capas física y AAL se dividen en dos subredes, una en la parte inferior que hace el trabajo y en la subcapa de convergencia en la parte superior que proporciona la interfaz propia de la capa superior inmediata. La subcapa PMD interactúa con el cable real. Mueve los bits dentro y fuera y maneja la temporización de bits, es decir, el tiempo que existe entre cada bit al transmitirlos.
 
 Esta capa será diferente para diferentes transportadoras y cables. La otra subcapa de la capa física es la subcapa TC . Cuando se transmiten las celdas, la capa TC las envía como una cadena de bits a la capa PMD. En el otro extremo, la subcapa TC recibe una serie de bits de entrada de la subcapa PMD.
-
+<p style=»text-align: justify;»>
 Su trabajo es convertir este flujo de bits en un flujo de celdas para la capa ATM. Maneja todos los aspectos relacionados con las indicaciones de dónde empiezan y terminan las celdas en el flujo de bits. En el modelo ATM, esta funcionalidad se da en la capa física. En el modelo OSI y en gran parte de las demás redes, el trabajo de entramado, es decir, convertir una serie de bits en bruto en una secuencia de tramas o celdas, es la tarea de la capa de enlace de datos.
 
-La capa AAL se divide en una subcapa SAR y una CS . La subcapa inferior fragmenta paquetes en celdas en el lado de transmisión y los une de nuevo en el destino. La subcapa superior permite que los sistemas ATM ofrezcan diversos tipos de servicios a diferentes aplicaciones .
+La capa AAL se divide en una subcapa SAR y una CS. La subcapa inferior fragmenta paquetes en celdas en el lado de transmisión y los une de nuevo en el destino. La subcapa superior permite que los sistemas ATM ofrezcan diversos tipos de servicios a diferentes aplicaciones .
 
 ______________________
 
@@ -77,7 +77,7 @@ ______________________
 
 Muchas empresas, universidades y otras organizaciones tienen un gran número de computadoras que requieren interconexión. Esta necesidad dio origen a la red de área local. **Ethernet**
 
-El medio de transmisión era un cable coaxial grueso de más de km de largo . El sistema podía contener hasta 256 máquinas por medio de transceptores acoplados al cable. Un cable con múltiples máquinas en paralelo se lla-ma cable de derivación múltiple .
+El medio de transmisión era un cable coaxial grueso de más de km de largo. El sistema podía contener hasta 256 máquinas por medio de transceptores acoplados al cable. Un cable con múltiples máquinas en paralelo se llama cable de derivación múltiple.
 
  Ethernet no es el único estándar de LAN. El comité también estandarizó Token Bus y Token Ring .
 ______________________
@@ -92,8 +92,9 @@ El estándar propuesto tenía que trabajar en dos modos
 1. En presencia de una estación base.
    - Toda la comunicación se hacía a través de la estación base
 2. En ausencia de una estación base.
-   - Las computadoras po-drían enviarse mensajes entre sí directamente.
+   - Las computadoras podrían enviarse mensajes entre sí directamente.
 
-No obstante, existen algunas diferencias inherentes con Ethernet en las capas física y de enlace de datos y tuvieron que manejarse median-te el estándar. Primero, una computadora en Ethernet siempre escucha el medio antes de transmitir. Sólo si el medio está inactivo la computadora puede empezar a transmitir. Esta idea no funciona igual en las LANs inalámbricas.
+No obstante, existen algunas diferencias inherentes con Ethernet en las capas física y de enlace de datos y tuvieron que manejarse mediante el estándar. Primero, una computadora en Ethernet siempre escucha el medio antes de transmitir. Sólo si el medio está inactivo la computadora puede empezar a transmitir. Esta idea no funciona igual en las LANs inalámbricas.
 
-El estándar 802.11a utiliza una banda de frecuencia más ancha y se ejecuta a ve-locidades de hasta 54 Mbps. Y el estándar 802.11b utiliza la misma banda de frecuencia que el pero se vale de una técnica de modulación diferente para alcanzar 11 Mbps. Ethernet alámbrica original.
+El estándar 802.11a utiliza una banda de frecuencia más ancha y se ejecuta a velocidades de hasta 54 Mbps. Y el estándar 802.11b utiliza la misma banda de frecuencia que el pero se vale de una técnica de modulación diferente para alcanzar 11 Mbps. Ethernet alámbrica original.
+
