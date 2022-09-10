@@ -18,7 +18,7 @@ ______________________
 - Poco utilizado
 - Sincornizar reloj
 
-![e1](/image/e1.jpg)
+![e1](./image/e1.jpg?raw=true)
 
 Como se soluciona la sincronizacion
 
@@ -35,7 +35,7 @@ En una linea de reloj no se va a tener un consecutivo de nos y ceros
 
 Mezcla la señal del reloj con la señal de los daatos mediante un **XOR**
 
-![manchester](/image/manchester.jpg)
+![manchester](./image/manchester.jpg?raw=true)
 
 <u><h2>Non return Zero Inverted</h2></u>
 - 1 -> transicion y 0 -> No transicion
@@ -48,7 +48,7 @@ Mezcla la señal del reloj con la señal de los daatos mediante un **XOR**
 - Rangos de frecuencia no inicia en 0
 - Se  necesitan Antenas gigantescas
    
-![pb](/image/pb.jpg)
+![pb](./image/pb.jpg?raw=true)
 
 Uso de frecuencia
   - Restricciones regulatorias
@@ -69,7 +69,7 @@ Uso de frecuencia
 - Fase modulada(cambio de fase)
   - Se puede ver como un circulo y el cambio es cuando se mueve un poco (en grados)
 
-![bg](/image/bg.jpg)
+![bg](./image/bg.jpg?raw=true)
 
 **Multiplexion**
 - Comparte lineas de comunicacion entre muchas señales
@@ -103,7 +103,7 @@ _____________________
  - Encapsulamiento de **paquetes** de capa de red (payload)
  - Manejo de tramas
 
-![tramas](/image/e2.jpg)
+![tramas](./image/e2.jpg?raw=true)
 
 **Servicios conceptuales (depende protocolos)**
 
@@ -134,13 +134,16 @@ _____________________
 - Asegurarse que las tramas sean entregadas en orden y que los datos sean correctos 
 - servicios sin conexion, no importa, el emisor sigue enviando.
 - Sevicio orientado a conexion:
-  - confirmacion de resepcion positiva: **ACK**
-  - confirmacion de respsion negativa: **NACK**
+  - confirmacion de recepcion positiva: **ACK**
+  - confirmacion de recepcion negativa: **NACK**
+    - Llego los datos pero la verificacion da error.
 - Temporizador: espera confirmacion, se da una retrasmision en caso de no recibir confirmacion.
 - Numero de trama
 - Informacion redundante -> si se pierde informacion 
 - Codigo de correciones de error detecta error y puede deducir cuales son los datos.
 - codigos de detecciones de errores solo detecta error. 
+
+![d](./image/e3.jpg?raw=true)
 
 <u> <h2>Codigos de Hamming </h2></u>
 
@@ -168,13 +171,13 @@ _____________________
 <u>Ejemplo</u>
 El bit de verificacion 1 va ser la pariedad de los bits (3,5,7,9,11)
 
-![calculo](/image/calculo.jpeg)
+![calculo](./image/calculo.jpeg?raw=true)
 
 - En la verificacion todas las pariedades por fila deben dar cero, en caso de no ser asi se lee el numero generado de abajo asi arriba. Como se muestra a continuacion
 
 <u>Ejemplo</u> 
 
-![error](/image/error.jpeg)
+![error](./image/error.jpeg?raw=true)
 
 **Nota**
 El codigo de haming puede variar de tamaño, pero siguen las mismas reglas de potencia de 2
